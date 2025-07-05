@@ -9,16 +9,14 @@ description = "AI-ready code repository aggregator (XML, JSON, YAML)"
 authors = [
     { name = "TristanInSec" }
 ]
-license = {text = "MIT"}
+license = "MIT"
 requires-python = ">=3.6"
 readme = "README.md"
-keywords = [
-    "code", "digest", "ai", "repository",
-    "xml", "yaml", "json", "documentation", "snapshot"
-]
-dependencies = [
-    "pyyaml"
-]
+keywords = ["code", "digest", "ai", "repository", "xml", "yaml", "json"]
+dependencies = ["pyyaml"]
+
+[tool.setuptools]
+py-modules = ["codedigest"]
 
 [project.scripts]
 codedigest = "codedigest:main"
