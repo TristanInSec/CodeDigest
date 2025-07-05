@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codedigest"
+version = "0.1.0"
+description = "AI-ready code repository aggregator (XML, JSON, YAML)"
+authors = [
+    { name = "TristanInSec" }
+]
+license = {text = "MIT"}
+requires-python = ">=3.6"
+readme = "README.md"
+keywords = [
+    "code", "digest", "ai", "repository",
+    "xml", "yaml", "json", "documentation", "snapshot"
+]
+dependencies = [
+    "pyyaml"
+]
+
+[project.scripts]
+codedigest = "codedigest:main"
