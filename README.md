@@ -54,6 +54,7 @@ python codedigest.py --path /my/repo --output digest.json
 
 | Option             | Description |
 |--------------------|-------------|
+| --timestamp        | Timestamp insertion in output filename |
 | --skip-other       | Skip files of type "other" (unknown/binary) |
 | --only-text        | Include only source/text files |
 | --include-ext      | Only include files with these extensions (e.g. `.py .md`) |
@@ -97,6 +98,7 @@ python codedigest.py --path ./myrepo --output digest.xml --no-summary --no-struc
 ### Full power usage with all controls
 ```
 python codedigest.py --path ./myrepo \
+  --timestamp \
   --output digest.xml \
   --include-ext .py .md .sh \
   --exclude-dir .git temp node_modules \
@@ -111,7 +113,7 @@ This is version `v0.1`.
 
 ## License
 
-**MIT **— free to use, modify, and distribute.
+**MIT** — free to use, modify, and distribute.
 
 ## Author
 
