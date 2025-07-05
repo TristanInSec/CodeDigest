@@ -6,7 +6,6 @@ It preserves structure, embeds readable source code (wrapped in CDATA for XML), 
 
 This tool is ideal for **AI ingestion**, **project snapshots**, **documentation**, or **audit purposes**.
 
-
 ## Features
 
 - Recursive folder walk — scans all files and directories
@@ -25,6 +24,10 @@ This tool is ideal for **AI ingestion**, **project snapshots**, **documentation*
 
 This project is also ideal for academic publications in **LaTeX**: it can aggregate all split files (e.g., per‑chapter or per‑section exports) into a single consolidated digest.
 
+## Screenshot
+
+![CodeDigest usage](assets/screenshot.png)
+_Example: Output digest shown in CLI below_
 
 ## Installation
 
@@ -42,7 +45,6 @@ pip install .
 python3 codedigest.py --path ./myrepo --output digest.xml --timestamp
 ```
 
-
 ## Dependencies
 
 This script uses only Python's standard library, **except** for:
@@ -54,7 +56,6 @@ This script uses only Python's standard library, **except** for:
 ```
 pip install PyYAML
 ```
-
 
 ## Usage
 
