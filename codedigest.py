@@ -14,12 +14,12 @@ Purpose:
 Version: 0.1
 
 Command Line Usage:
-    python codedigest.py --path /repo --output digest.xml
-    python codedigest.py --path /repo --output digest.xml --timestamp
-    python codedigest.py --path /repo --output digest.yaml --skip-other --only-text
-    python codedigest.py --path /repo --output digest.json --include-ext .tex .bib
-    python codedigest.py --path /repo --output digest.json --include-ext .cfg .conf --exclude-dir .venv .log
-    python codedigest.py --path /repo --output digest.xml --no-summary --no-structure
+    python3 codedigest.py --path /repo --output digest.xml
+    python3 codedigest.py --path /repo --output digest.xml --timestamp
+    python3 codedigest.py --path /repo --output digest.yaml --skip-other --only-text
+    python3 codedigest.py --path /repo --output digest.json --include-ext .tex .bib
+    python3 codedigest.py --path /repo --output digest.json --include-ext .cfg .conf --exclude-dir .venv .log
+    python3 codedigest.py --path /repo --output digest.xml --no-summary --no-structure
 
 Features:
     - Recursive folder walk with exclusion support (.git, __pycache__, etc.)
