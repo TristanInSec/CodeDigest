@@ -26,8 +26,18 @@ This project is also ideal for academic publications in **LaTeX**: it can aggreg
 
 ## Installation
 
+### Option 1 – Install via `pip`
+
+> You can build and install the CLI tool using `pip`, which relies on the local `pyproject.toml` configuration:
 ```
-pip install codedigest
+pip install .
+```
+
+### Option 2 – Run without installing
+
+> You can also run CodeDigest directly without installing anything globally:
+```
+python3 codedigest.py --path ./myrepo --output digest.xml --timestamp
 ```
 
 ## Dependencies
@@ -45,9 +55,9 @@ pip install PyYAML
 ## Usage
 
 ```
-python codedigest.py --path /my/repo --output digest.xml
-python codedigest.py --path /my/repo --output digest.yaml
-python codedigest.py --path /my/repo --output digest.json
+python3 codedigest.py --path /my/repo --output digest.xml
+python3 codedigest.py --path /my/repo --output digest.yaml
+python3 codedigest.py --path /my/repo --output digest.json
 ```
     
 ### Options
@@ -67,37 +77,37 @@ python codedigest.py --path /my/repo --output digest.json
 
 ### Only include specific extensions for a code Project (`.py`, `.yaml`, `.ini`)
 ```
-python codedigest.py --path ./myrepo --output digest.xml --include-ext .py .yaml .ini
+python3 codedigest.py --path ./myrepo --output digest.xml --include-ext .py .yaml .ini
 ```
 
 ### Only include specific extensions for an Academic Publication (`.tex`, `.bib`)
 ```
-python codedigest.py --path ./latex_paper --output digest.json --include-ext .tex .bib
+python3 codedigest.py --path ./latex_paper --output digest.json --include-ext .tex .bib
 ```
 
 ### Exclude binary or unknown file types
 ```
-python codedigest.py --path ./myrepo --output digest.yaml --skip-other
+python3 codedigest.py --path ./myrepo --output digest.yaml --skip-other
 ```
 
 ### Include only text files (no reference to images, binaries, etc.)
 ```
-python codedigest.py --path ./myrepo --output digest.json --only-text
+python3 codedigest.py --path ./myrepo --output digest.json --only-text
 ```
 
 ### Override default excluded directories
 ```
-python codedigest.py --path ./myrepo --output digest.yaml --exclude-dir .venv build dist node_modules
+python3 codedigest.py --path ./myrepo --output digest.yaml --exclude-dir .venv build dist node_modules
 ```
 
 ### Skip directory tree and file-type summary
 ```
-python codedigest.py --path ./myrepo --output digest.xml --no-summary --no-structure
+python3 codedigest.py --path ./myrepo --output digest.xml --no-summary --no-structure
 ```
 
 ### Full power usage with all controls
 ```
-python codedigest.py --path ./myrepo \
+python3 codedigest.py --path ./myrepo \
   --timestamp \
   --output digest.xml \
   --include-ext .py .md .sh \
