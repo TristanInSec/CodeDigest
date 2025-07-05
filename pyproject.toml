@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "codedigest"
 version = "0.1.0"
-description = "AI-ready code repository aggregator (XML, JSON, YAML)"
+description = "Repository Aggregator Script (XML, JSON, YAML)"
 authors = [
     { name = "TristanInSec" }
 ]
