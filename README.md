@@ -27,7 +27,7 @@ This project is also ideal for academic publications in **LaTeX**: it can aggreg
 ## Screenshot
 
 ![CodeDigest usage](assets/screenshot.png)
-_Example: Output digest shown in CLI below_
+_Example: Output digest shown in CLI (Local "Demo" repository exported to a single XML file)_
 
 ## Installation
 
